@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="container flex justify-between h-20 max-w-screen-2xl items-center px-4">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/d2b-logo-wide-2rciA537rnG7uRabJnr9jL04H5ShBz.png"
+            src="/d2b-logo-wide.png"
             alt="D2B Logo"
             width={200}
             height={40}
