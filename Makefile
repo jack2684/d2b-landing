@@ -1,4 +1,4 @@
-.PHONY: install dev clean deploy build build-n-deploy
+.PHONY: install dev clean deploy build build-n-deploy lint lint-fix
 
 # Default target
 all: install
@@ -17,8 +17,16 @@ clean:
 	rm -rf .next
 	rm -f pnpm-lock.yaml 
 
+# Lint check
+lint:
+	pnpm eslint "src/**/*.{ts,tsx}" --ignore-pattern ".next/*"
+
+# Auto-fix lint errors where possible
+lint-fix:
+	pnpm eslint "src/**/*.{ts,tsx}" --ignore-pattern ".next/*" --fix
+
 # Build the project
-build:
+build: lint-fix
 	pnpm build
 
 # Deploy to Vercel
