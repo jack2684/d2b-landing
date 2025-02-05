@@ -17,8 +17,9 @@ export default function AboutUsContent() {
       await submitFeedback(feedback)
       setSubmitMessage("Thank you for your insights!")
       setFeedback("")
-    } catch (error) {
-      setSubmitMessage("An error occurred. Please try again.")
+    } catch (e) {
+      setSubmitMessage("An error occurred. Please try again")
+      console.error(e)
     } finally {
       setIsSubmitting(false)
     }
@@ -34,17 +35,17 @@ export default function AboutUsContent() {
         recognizing the challenges faced by professionals in the AEC industry.
       </p>
       <p className="mb-6 text-lg">
-        Our mission is to speed up the process from design-intent to build reality. We're focused on bridging the gap
+        Our mission is to speed up the process from design-intent to build reality. We&apos;re focused on bridging the gap
         between complex design documents and practical, buildable solutions.
       </p>
       <p className="mb-6 text-lg">
-        As we embark on this journey, we acknowledge that we have a lot to learn. That's why we're reaching out to you,
+        As we embark on this journey, we acknowledge that we have a lot to learn. That&apos;s why we&apos;re reaching out to you,
         the experts in the field, to gain valuable insights into how the problem of complex PDF documentation is
         manifesting in your day-to-day work.
       </p>
       <h2 className="text-2xl font-semibold mb-4">Share Your Insights</h2>
       <p className="mb-6">
-        We'd love to hear about your experiences and challenges with PDF documentation in the AEC industry. Your
+        We&apos;d love to hear about your experiences and challenges with PDF documentation in the AEC industry. Your
         feedback will be invaluable in helping us develop solutions that truly address the pain points you face.
       </p>
       <form onSubmit={handleSubmit} className="space-y-4">

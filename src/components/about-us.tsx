@@ -31,6 +31,12 @@ export default function AboutUs() {
             you, the experts in the field, to gain valuable insights into how the problem of complex PDF documentation
             is manifesting in your day-to-day work.
           </p>
+          <p className="mb-6 text-lg">
+            We&apos;re committed to revolutionizing how the AEC industry handles documentation.
+          </p>
+          <p className="mb-6 text-lg">
+            That&apos;s why we&apos;re building innovative solutions that bridge the gap between design and construction.
+          </p>
           <div className="mt-8 flex justify-center">
             <Button onClick={() => scrollToSection("cta")} size="lg">
               Contact Us

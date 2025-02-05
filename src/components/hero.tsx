@@ -24,6 +24,9 @@ export default function Hero() {
           D2B is revolutionizing the AEC industry by simplifying complex PDF documentation. From AI-driven analytics to
           seamless integrations, we're bridging the gap between design and construction.
         </p>
+        <p className="mb-6 text-lg">
+          Let&apos;s transform how we handle documentation
+        </p>
       </div>
       <div className="flex gap-4">
         <Button size="lg" onClick={() => scrollToSection("solutions")}>
