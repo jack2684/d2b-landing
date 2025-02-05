@@ -3,7 +3,7 @@ import { Twitter, Linkedin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="border-t">
+    <footer className="border-t pointer-events-auto">
       <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12">
         <div className="flex-1 space-y-4">
           <h2 className="font-bold">D2B AI</h2>

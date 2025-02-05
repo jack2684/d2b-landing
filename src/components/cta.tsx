@@ -45,7 +45,7 @@ export default function CTA() {
           Join our mailing list to receive the latest news and optionally share your experiences with PDF documentation
           in the AEC industry.
         </p>
-        <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4">
+        <form onSubmit={handleSubmit} className="w-full max-w-md space-y-4 pointer-events-auto">
           <div>
             <Label htmlFor="name" className="sr-only">
               Name

@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen">
       <Navbar />
-      <div className="relative z-10">
+      <div className="relative z-10 bg-transparent pointer-events-none">
         <Hero />
         <Features />
         <AboutUs />
