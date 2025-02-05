@@ -1,4 +1,4 @@
-.PHONY: install dev clean
+.PHONY: install dev clean deploy
 
 # Default target
 all: install
@@ -16,3 +16,7 @@ clean:
 	rm -rf node_modules
 	rm -rf .next
 	rm -f pnpm-lock.yaml 
+
+# Deploy to Vercel
+deploy:
+	vercel deploy
