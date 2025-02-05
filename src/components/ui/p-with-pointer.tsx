@@ -1,9 +1,7 @@
 import { cn } from "@/lib/utils"
 import * as React from "react"
 
-interface PWithPointerProps extends React.HTMLAttributes<HTMLParagraphElement> { }
-
-const PWithPointer = React.forwardRef<HTMLParagraphElement, PWithPointerProps>(
+const PWithPointer = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTMLParagraphElement>>(
   ({ className, ...props }, ref) => {
     return <p className={cn("pointer-events-auto", className)} ref={ref} {...props} />
   }
