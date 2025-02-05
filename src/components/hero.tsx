@@ -21,7 +21,7 @@ export default function Hero() {
           to build-reality
         </h1>
         <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          Our mission is to make drawings coordination easy. By integrate AI-driven documentation co-pilot to your day-to-day workflow, we&apos;re bridging the gap among designs and constructions.
+          Our mission is to make drawings coordination easy. By integrating AI-driven documentation co-pilot to your day-to-day workflow, you can take back your time on what really matters.
         </p>
       </div>
       <div className="flex gap-4">

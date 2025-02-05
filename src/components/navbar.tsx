@@ -34,6 +34,9 @@ export default function Navbar() {
             <button onClick={() => scrollToSection("about")} className="transition-colors hover:text-primary">
               About
             </button>
+            <Link href="https://blog.dtob.ai" className="transition-colors hover:text-primary">
+              Blog
+            </Link>
           </nav>
           <Button onClick={() => scrollToSection("cta")} size="sm">
             Get Started

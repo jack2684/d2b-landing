@@ -1,15 +1,19 @@
-import { Brain, Workflow, Shield, Plug } from "lucide-react"
+"use client"
+
+import { CircleArrowOutUpRight, Bot, Shield, Plug } from "lucide-react"
+import { useCallback } from "react"
+import { Button } from "@/components/ui/button"
 
 const features = [
   {
     name: "AI Searh Engine for Construcionts",
     description: "An AI search engine for your construction projet.",
-    icon: Brain,
+    icon: CircleArrowOutUpRight,
   },
   {
-    name: "Documentation Assistant",
-    description: "Code Review, Cross Discipline Review, Shope Drawing Reviews",
-    icon: Workflow,
+    name: "Drawings Coordination Co-pilot",
+    description: "Code Review, Cross Discipline Review, Shop Drawing Reviews",
+    icon: Bot,
   },
   {
     name: "Enterprise-Grade Security",
@@ -24,6 +28,13 @@ const features = [
 ]
 
 export default function Features() {
+  const scrollToSection = useCallback((sectionId: string) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+    }
+  }, [])
+
   return (
     <section id="solutions" className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center pointer-events-auto">
@@ -42,6 +53,12 @@ export default function Features() {
             <p className="mt-2 text-muted-foreground">{feature.description}</p>
           </div>
         ))}
+      </div>
+
+      <div className="mt-12 flex justify-center">
+        <Button onClick={() => scrollToSection("cta")} size="lg">
+          Try it out
+        </Button>
       </div>
     </section>
   )

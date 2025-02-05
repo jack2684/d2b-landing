@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Twitter, Linkedin } from "lucide-react"
+import { Linkedin, Instagram } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -13,15 +13,11 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-sm font-medium">Solutions</h3>
             <ul className="space-y-3 text-sm">
-              <li>
-                <Link href="/ai-analytics" className="text-muted-foreground transition-colors hover:text-primary">
-                  AI Analytics
-                </Link>
+              <li className="text-muted-foreground transition-colors hover:text-primary">
+                AI Search Engine for Construcionts
               </li>
-              <li>
-                <Link href="/cloud-services" className="text-muted-foreground transition-colors hover:text-primary">
-                  Cloud Services
-                </Link>
+              <li className="text-muted-foreground transition-colors hover:text-primary">
+                Drawings Coordination Co-pilot
               </li>
             </ul>
           </div>
@@ -44,18 +40,18 @@ export default function Footer() {
             <h3 className="text-sm font-medium">Connect</h3>
             <div className="flex space-x-4">
               <Link
-                href="https://twitter.com/d2bai"
-                className="text-muted-foreground transition-colors hover:text-primary"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
                 href="https://linkedin.com/company/d2bai"
                 className="text-muted-foreground transition-colors hover:text-primary"
               >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
+              </Link>
+              <Link
+                href="https://instagram.com/d2bai"
+                className="text-muted-foreground transition-colors hover:text-primary"
+              >
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
               </Link>
             </div>
           </div>
