@@ -19,24 +19,15 @@ export default function AboutUs() {
           <h2 className="text-4xl font-bold mb-4">About D2B</h2>
           <PWithPointer className="text-xl text-muted-foreground mb-8">Speed-up design-intent to build-reality</PWithPointer>
           <PWithPointer className="mb-6 text-lg">
-            At D2B, we are an early-stage startup with experts from AEC (Architecture, Engineering, and Construction),
-            software development, and AI. Our team is deeply passionate about simplifying tedious PDF documentation,
+            At D2B, we are an early-stage startup with experts from AI and AEC (Architecture, Engineering, and Construction). Our team is deeply passionate about simplifying work related to construction drawings coordination,
             recognizing the challenges faced by professionals in the AEC industry.
           </PWithPointer>
           <PWithPointer className="mb-6 text-lg">
-            Our mission is to speed up the process from design-intent to build-reality. We&apos;re focused on bridging the
-            gap between complex design documents and practical, buildable solutions.
+            Our mission is to make drawings coordination easy.
           </PWithPointer>
           <PWithPointer className="mb-6 text-lg">
             As we embark on this journey, we acknowledge that we have a lot to learn. That&apos;s why we&apos;re reaching out to
-            you, the experts in the field, to gain valuable insights into how the problem of complex PDF documentation
-            is manifesting in your day-to-day work.
-          </PWithPointer>
-          <PWithPointer className="mb-6 text-lg">
-            We&apos;re committed to revolutionizing how the AEC industry handles documentation.
-          </PWithPointer>
-          <PWithPointer className="mb-6 text-lg">
-            That&apos;s why we&apos;re building innovative solutions that bridge the gap between design and construction.
+            you, the experts in the field, to gain valuable insights.
           </PWithPointer>
           <div className="mt-8 flex justify-center">
             <Button onClick={() => scrollToSection("cta")} size="lg">

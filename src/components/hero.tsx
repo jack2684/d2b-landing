@@ -27,10 +27,10 @@ export default function Hero() {
       <div className="flex gap-4">
         <Button variant="outline" size="lg" onClick={() => scrollToSection("solutions")}>
           Explore Solutions
-          <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
         <Button size="lg" onClick={() => scrollToSection("cta")}>
           Sign Me Up
+          <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
       </div>
     </section>
