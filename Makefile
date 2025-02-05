@@ -1,4 +1,4 @@
-.PHONY: install dev clean deploy
+.PHONY: install dev clean deploy build build-n-deploy
 
 # Default target
 all: install
@@ -17,6 +17,14 @@ clean:
 	rm -rf .next
 	rm -f pnpm-lock.yaml 
 
+# Build the project
+build:
+	pnpm build
+
 # Deploy to Vercel
 deploy:
+	vercel deploy
+
+# Build and deploy in one command
+build-n-deploy: build
 	vercel deploy
