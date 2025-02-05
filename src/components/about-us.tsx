@@ -23,11 +23,11 @@ export default function AboutUs() {
             recognizing the challenges faced by professionals in the AEC industry.
           </p>
           <p className="mb-6 text-lg">
-            Our mission is to speed up the process from design-intent to build-reality. We're focused on bridging the
+            Our mission is to speed up the process from design-intent to build-reality. We&apos;re focused on bridging the
             gap between complex design documents and practical, buildable solutions.
           </p>
           <p className="mb-6 text-lg">
-            As we embark on this journey, we acknowledge that we have a lot to learn. That's why we're reaching out to
+            As we embark on this journey, we acknowledge that we have a lot to learn. That&apos;s why we&apos;re reaching out to
             you, the experts in the field, to gain valuable insights into how the problem of complex PDF documentation
             is manifesting in your day-to-day work.
           </p>

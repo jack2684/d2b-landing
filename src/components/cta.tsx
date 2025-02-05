@@ -30,7 +30,7 @@ export default function CTA() {
       setName("")
       setEmail("")
       setChallenges("")
-    } catch (_) {  // Use underscore to indicate intentionally unused parameter
+    } catch {  // Removed unused parameter
       setSubmitMessage("An error occurred. Please try again.")
     } finally {
       setIsSubmitting(false)

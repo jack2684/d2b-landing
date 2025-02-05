@@ -1,9 +1,9 @@
 "use client"
 
-import { GeistSans } from "next/font/google"
+import { Inter } from "next/font/google"
 import "./globals.css"
 
-const geistSans = GeistSans({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export default function RootLayout({
   children,
@@ -11,7 +11,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={geistSans.className}>
+    <html lang="en" className={inter.className}>
       <body>{children}</body>
     </html>
   )

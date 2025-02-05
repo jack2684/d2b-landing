@@ -4,11 +4,6 @@ import { cn } from "@/lib/utils"
 
 type InputProps = React.InputHTMLAttributes<HTMLInputElement>
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  // Add any additional props here if needed
-  // example: label?: string
-}
-
 const Input = React.forwardRef<HTMLInputElement, InputProps>(({ className, type, ...props }, ref) => {
   return (
     <input

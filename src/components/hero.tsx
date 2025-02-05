@@ -22,7 +22,7 @@ export default function Hero() {
         </h1>
         <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
           D2B is revolutionizing the AEC industry by simplifying complex PDF documentation. From AI-driven analytics to
-          seamless integrations, we're bridging the gap between design and construction.
+          seamless integrations, we&apos;re bridging the gap between design and construction.
         </p>
         <p className="mb-6 text-lg">
           Let&apos;s transform how we handle documentation
