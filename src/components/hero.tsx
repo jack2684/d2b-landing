@@ -21,17 +21,16 @@ export default function Hero() {
           to build-reality
         </h1>
         <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          D2B is revolutionizing the AEC industry by simplifying complex PDF documentation. From AI-driven analytics to
-          seamless integrations, we&apos;re bridging the gap between design and construction.
-        </p>
-        <p className="mb-6 text-lg">
-          Let&apos;s transform how we handle documentation
+          Our mission is to make drawings coordination easy. By integrate AI-driven documentation co-pilot to your day-to-day workflow, we&apos;re bridging the gap among designs and constructions.
         </p>
       </div>
       <div className="flex gap-4">
-        <Button size="lg" onClick={() => scrollToSection("solutions")}>
+        <Button variant="outline" size="lg" onClick={() => scrollToSection("solutions")}>
           Explore Solutions
           <ArrowRight className="ml-2 h-4 w-4" />
+        </Button>
+        <Button size="lg" onClick={() => scrollToSection("cta")}>
+          Sign Me Up
         </Button>
       </div>
     </section>
